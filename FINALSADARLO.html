@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Batman Collection</title>
+    <link rel="icon" type="image/png" href="img/batmanlogo4.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ADARLOSTYLES.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="img/batmanlogo.png" alt="Batman Logo">
+        </div>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">HOME</a></li>
+            <li><a href="#" onclick="showPage('bio')">BIOGRAPHY</a></li>
+            <li><a href="#" onclick="showPage('artwork')">ARTWORKS</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="container">
+        <div id="home" class="page active">
+            <h1>THE BATMAN COLLECTION</h1>
+            <div class="hero">
+                <h2>THE ULTIMATE BATMAN ARCHIVE</h2>
+                <p>Your complete gateway to exploring the Dark Knight's most iconic stories, unforgettable villains, and legendary appearances across all media. Immerse yourself in the rich tapestry of Batman's universe - from groundbreaking graphic novels that redefined superhero storytelling, to cinematic masterpieces that brought Gotham to life on the silver screen, to award-winning animated series that captivated generations. Whether you're a lifelong fan or just beginning your journey into the shadows of Gotham City, discover the tales that transformed Bruce Wayne into the world's greatest detective and most enduring symbol of justice.</p>
+            </div>
+            <div class="selection-container">
+                <div class="selection-box" onclick="showCarousel('comics')">
+                    <img src="img/comics1.JPG" alt="Comics">
+                    <div class="selection-content">
+                        <h2>COMICS</h2>
+                    </div>
+                </div>
+                <div class="selection-box" onclick="showCarousel('movies')">
+                    <img src="img/liveaction1.JPG" alt="Live Action">
+                    <div class="selection-content">
+                        <h2>LIVE ACTION</h2>
+                    </div>
+                </div>
+                <div class="selection-box" onclick="showCarousel('animated')">
+                    <img src="img/animated1.JPG" alt="Animated Series">
+                    <div class="selection-content">
+                        <h2>ANIMATED SERIES</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comics-carousel" class="page carousel-section">
+            <h1>COMIC BOOKS & GRAPHIC NOVELS</h1>
+            <button class="return-button" onclick="showPage('home')">← RETURN TO CATEGORIES</button>
+            <div class="carousel-container">
+                <button class="carousel-nav prev" onclick="changeSlide('comics', -1)">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="comics-track">
+                        <div class="carousel-item" data-title="ABSOLUTE BATMAN" data-desc="Absolute Batman is a 2024–present comic book series by Scott Snyder and Nick Dragotta that redefines the Caped Crusader within DC's Absolute Universe imprint. In this continuity, Bruce Wayne is a 24-year-old, working-class civil engineer living in a much harsher, more violent version of Gotham City. He is characterized by a complete lack of inherited wealth, resources, or the traditional Bat-Family, making him a more grounded, desperate, and everyman version of the character. .">
+                            <div class="carousel-box">
+                                <img src="img/absolute1.JPG" alt="Batman Comics">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN: THE KILLING JOKE" data-desc="Batman: The Killing Joke (1988) is a seminal DC Comics one-shot graphic novel written by Alan Moore and illustrated by Brian Bolland. Often cited as the definitive Joker story, it is famous for its dark, gritty tone, psychological exploration of the relationship between Batman and the Joker, and the introduction of a possible origin story for the villain. .">
+                            <div class="carousel-box">
+                                <img src="img/killingjoke1.JPG" alt="The Dark Knight Returns">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN: KNIGHTFALL" data-desc="Batman: Knightfall is a monumental 1993–1994 DC Comics crossover storyline, famous for the introduction of the villain Bane and for physically breaking the Caped Crusader. The saga spans three main acts—Knightfall, Knightquest, and KnightsEnd—detailing the systematic dismantling of Batman, his replacement by a more violent successor, and his eventual return. ">
+                            <div class="carousel-box">
+                                <img src="img/knightfall1.JPG" alt="Batman Year One">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN: THE DARK KNIGHT RETURNS" data-desc="Batman: The Dark Knight Returns is a seminal four-issue comic book miniseries published by DC Comics in 1986, written and illustrated by Frank Miller The story is set in a dystopian near-future (1986) where an aging, 55-year-old Bruce Wayne has been retired from his role as Batman for ten years. Gotham City has fallen into a state of decay, lawlessness, and extreme violence, dominated by a sadistic gang known as The Mutants. Haunted by the death of the previous Robin (Jason Todd) and unable to ignore the city's collapse, a restless and alcoholic Bruce Wayne is compelled to return to crime-fighting. .">
+                            <div class="carousel-box">
+                                <img src="img/darkknight1.JPG" alt="The Killing Joke">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN: HUSH" data-desc="Batman: Hush is a 2002-2003 comic book story arc that ran through the Batman monthly series. It was written by Jeph Loeb, and penciled by Jim Lee, inked by Scott Williams and colored by Alex Sinclair. The story depicts a mysterious stalker, head wrapped in bandages, called Hush, who seems intent on sabotaging Batman from afar, and utilizes a large number of guest appearances by Batman villains. It also emphasizes the romantic feelings between Batman and Catwoman.">
+                            <div class="carousel-box">
+                                <img src="img/hush.JPG" alt="Batman Hush">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-nav next" onclick="changeSlide('comics', 1)">›</button>
+            </div>
+            <div class="carousel-description">
+                <h3 id="comics-title">Title Here</h3>
+                <p id="comics-desc">Description will appear here.</p>
+            </div>
+        </div>
+        <div id="movies-carousel" class="page carousel-section">
+            <h1>LIVE ACTION MOVIES</h1>
+            <button class="return-button" onclick="showPage('home')">← RETURN TO CATEGORIES</button>
+            <div class="carousel-container">
+                <button class="carousel-nav prev" onclick="changeSlide('movies', -1)">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="movies-track">
+                        <div class="carousel-item" data-title="THE DARK KNIGHT (2008)" data-desc="The Dark Knight (2008) follows Batman (Christian Bale) as he teams up with Lt. Jim Gordon (Gary Oldman) and new District Attorney Harvey Dent (Aaron Eckhart) to dismantle Gotham's criminal underworld, but their efforts are challenged by the chaotic, anarchistic villain, the Joker (Heath Ledger), who unleashes a reign of terror, forcing Batman to confront his own limits and the darkness within Gotham and himself. ">
+                            <div class="carousel-box">
+                                <img src="img/movie1.JPG" alt="Batman Live Action">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN & ROBIN (1997)" data-desc="Batman & Robin (1997) follows the Dynamic Duo as they battle the icy Mr. Freeze (Arnold Schwarzenegger) and the plant-controlling Poison Ivy (Uma Thurman), who team up to turn Gotham into a frozen wasteland, while also facing internal partnership tensions and welcoming new ally Batgirl (Alicia Silverstone), all while Alfred fights a terminal illness, leading to a visually flamboyant, pun-heavy, and campy superhero adventure known for its over-the-top style and infamous nipples on the Batsuit controversy. ">
+                            <div class="carousel-box">
+                                <img src="img/movie2.JPG" alt="The Dark Knight">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN (1989)" data-desc="Tim Burton's 1989 Batman depicts billionaire Bruce Wayne (Michael Keaton) as Gotham City's dark, brooding vigilante, Batman, battling the maniacal, clownish gangster Jack Napier (Jack Nicholson), who transforms into the Joker after a chemical accident and terrorizes the city with his psychotic schemes, all while navigating a relationship with photojournalist Vicki Vale (Kim Basinger) and facing public uncertainty about his existence. The film captures a gothic Gotham and explores the origins of both Batman and his greatest foe. ">
+                            <div class="carousel-box">
+                                <img src="img/movie3.JPG" alt="Batman Begins">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="THE BATMAN (2022)" data-desc="he Batman (2022) is a dark, gritty, noir-style detective film starring Robert Pattinson as a haunted, early-career Batman, years before he's fully established, as he investigates the murders of Gotham's elite by the mysterious, riddle-leaving serial killer, the Riddler (Paul Dano). The investigation pulls Batman (Bruce Wayne) and his allies, including Selina Kyle/Catwoman (Zoë Kravitz) and Lt. James Gordon (Jeffrey Wright), into uncovering deep-seated corruption that connects to his own family, forcing him to confront the true darkness of Gotham's underworld and his own past. ">
+                            <div class="carousel-box">
+                                <img src="img/movie4.JPG" alt="The Batman">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="THE DARK KNIGHT RISES" data-desc="The Dark Knight Rises follows Bruce Wayne eight years after he vanished as Batman, taking the blame for Harvey Dent's crimes, as he's forced out of seclusion by the ruthless terrorist Bane and the mysterious cat burglar Selina Kyle (Catwoman) to protect Gotham City from a devastating nuclear threat, culminating in a final, desperate battle to save the city. s">
+                            <div class="carousel-box">
+                                <img src="img/movie5.JPG" alt="Batman 1989">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-nav next" onclick="changeSlide('movies', 1)">›</button>
+            </div>
+            <div class="carousel-description">
+                <h3 id="movies-title">Title Here</h3>
+                <p id="movies-desc">Description will appear here.</p>
+            </div>
+        </div>
+        <div id="animated-carousel" class="page carousel-section">
+            <h1>ANIMATED SERIES</h1>
+            <button class="return-button" onclick="showPage('home')">← RETURN TO CATEGORIES</button>
+            <div class="carousel-container">
+                <button class="carousel-nav prev" onclick="changeSlide('animated', -1)">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="animated-track">
+                        <div class="carousel-item" data-title="BATMAN THE ANIMATED SERIES" data-desc="Batman: The Animated Series (BTAS) is a groundbreaking 1992-1995 animated show that redefined the Dark Knight with its dark, film noir style, complex storytelling, and iconic voice acting, establishing the DC Animated Universe (DCAU) with mature themes and deep characterizations of heroes and villains like Kevin Conroy's Batman and Mark Hamill's Joker, and introducing Harley Quinn, making it a landmark in superhero animation for all ages.">
+                            <div class="carousel-box">
+                                <img src="img/animated2.JPG" alt="Batman Animated">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="THE NEW ADVENTURES OF BATMAN" data-desc="The New Adventures of Batman (1977) was a Filmation cartoon continuing the campy tone of the '60s live-action show, featuring Adam West and Burt Ward voicing Batman and Robin as they fought classic villains with help from Batgirl and the meddling imp, Bat-Mite, while missing Alfred and using iconic reversed-R Robin costume. ">
+                            <div class="carousel-box">
+                                <img src="img/animated3.JPG" alt="Batman The Animated Series">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN BEYOND" data-desc="Batman Beyond is a futuristic sequel in the DC Animated Universe where a new, young Batman, Terry McGinnis, takes over from an elderly Bruce Wayne in a high-tech, sleek black suit with a red bat symbol, fighting future villains in a cyberpunk Gotham while mentored by Bruce, blending classic Batman themes with advanced technology and a more modern, witty teen hero. ">
+                            <div class="carousel-box">
+                                <img src="img/animated4.JPG" alt="Batman Beyond">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BATMAN THE BRAVE AND THE BOLD" data-desc="Batman: The Brave and the Bold is an American animated television series that aired on Cartoon Network from 2008 to 2011, spanning three seasons. Unlike darker, more brooding interpretations of the character, this series presents a lighter, campier, and more comedic take, heavily inspired by the 1960s Adam West TV series and the Silver Age of DC Comics. ">
+                            <div class="carousel-box">
+                                <img src="img/animated5.JPG" alt="Mask of the Phantasm">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-title="BEWARE THE BATMAN" data-desc="Beware the Batman is a 2013 CGI animated series from DC Comics that focuses on Batman's early years, utilizing lesser-known villains like Anarky and Professor Pyg with a unique 3D animation style and featuring Alfred as a field operative and his goddaughter, Katana, as a partner. It's known for its distinct look, departure from classic foes, and portrayal of a younger, less experienced Dark Knight honing his skills with his two key allies. ">
+                            <div class="carousel-box">
+                                <img src="img/animated6.JPG" alt="Justice League">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-nav next" onclick="changeSlide('animated', 1)">›</button>
+            </div>
+            <div class="carousel-description">
+                <h3 id="animated-title">Title Here</h3>
+                <p id="animated-desc">Description will appear here.</p>
+            </div>
+        </div>
+        <div id="bio" class="page">
+    <h1>BATMAN BIOGRAPHY</h1>
+    <div class="bio-images">
+        <div class="bio-image-box">
+            <div class="image-placeholder">
+                <img src="img/thebatman.png" alt="Batman">
+            </div>
+            <p>Batman</p>
+        </div>
+        <div class="bio-image-box">
+            <div class="image-placeholder">
+                <img src="img/brucewayne.jpg" alt="Bruce Wayne">
+            </div>
+            <p>Bruce Wayne</p>
+        </div>
+    </div>
+    
+    <!-- CHARACTER PROFILE MOVED HERE (ABOVE ORIGIN STORY) -->
+    <h3>Character Profile</h3>
+<div class="profile-grid">
+    <div class="profile-item">
+        <strong>Real Name:</strong> <span>Bruce Wayne</span>
+    </div>
+    <div class="profile-item">
+        <strong>Alias:</strong> <span>The Dark Knight, The Caped Crusader, The World's Greatest Detective</span>
+    </div>
+    <div class="profile-item">
+        <strong>Base of Operations:</strong> <span>Gotham City</span>
+    </div>
+    <div class="profile-item">
+        <strong>Occupation:</strong> <span>CEO of Wayne Enterprises, Vigilante</span>
+    </div>
+    <div class="profile-item">
+        <strong>Abilities:</strong> <span>Peak Human Conditioning, Master Detective, Expert Martial Artist, Genius-Level Intellect</span>
+    </div>
+    <div class="profile-item">
+        <strong>Equipment:</strong> <span>Batsuit, Utility Belt, Batarangs, Batmobile, Various Gadgets</span>
+    </div>
+    <div class="profile-item">
+        <strong>First Appearance:</strong> <span>Detective Comics #27 (May 1939)</span>
+    </div>
+    <div class="profile-item">
+        <strong>Affiliations:</strong> <span>Justice League, Batman Family, Wayne Enterprises, Outsiders</span>
+    </div>
+</div>
+    
+    <div class="bio-section">
+        <h3>Origin Story</h3>
+        <p>Bruce Wayne witnessed the murder of his parents, Thomas and Martha Wayne, in Crime Alley when he was just eight years old. This traumatic event shaped his entire life and set him on the path to becoming Batman.</p>
+        <p>After years of training around the world in various martial arts, detective techniques, and sciences, Bruce returned to Gotham City. He chose the bat as his symbol to strike fear into the hearts of criminals, transforming himself into the Dark Knight.</p>
+        <p>Operating from the Batcave beneath Wayne Manor, Batman wages a one-man war on crime, refusing to kill but using fear, intelligence, and cutting-edge technology to protect Gotham City from its darkest threats.</p>
+    </div>
+    
+    <div class="bio-section">
+        <h3>Creators</h3>
+        <p><strong>Bob Kane</strong> - Credited as Batman's creator, Kane was the artist who first designed the character in 1939. However, historical records show that his original design was significantly different from the Batman we know today.</p>
+        <p><strong>Bill Finger</strong> - For decades uncredited, Bill Finger was the true creative force behind Batman. He conceived most of Batman's key elements including the costume design, Gotham City, the Batcave, and many iconic villains like the Joker, Penguin, and Riddler. Finger also wrote most early Batman stories that established the character's dark, detective noir tone.</p>
+        <p>In recent years, DC Comics has officially recognized Bill Finger's contributions, now crediting both Kane and Finger as Batman's creators. Finger's legacy as a foundational architect of the superhero genre continues to influence Batman stories today.</p>
+    </div>
+</div>
+        <div id="artwork" class="page">
+            <h1>ARTWORKS & POSTERS</h1>
+            <div class="artwork-grid">
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork1.jpg" alt="The Dark Knight Returns">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>The Dark Knight Returns</h4>
+                        <p>"This should be agony. I should be a mass of aching muscle. But I'm a man of thirty, of twenty again."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork2.jpg" alt="Gotham Guardian">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>Gotham Guardian</h4>
+                        <p>"I am vengeance. I am the night. I am Batman!"</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork3.jpg" alt="The Caped Crusader">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>The Caped Crusader</h4>
+                        <p>"It's not who I am underneath, but what I do that defines me."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork4.jpg" alt="Batman vs Joker">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>Batman vs Joker</h4>
+                        <p>"You either die a hero, or live long enough to see yourself become the villain."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork5.jpg" alt="Defender of Gotham">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>Defender of Gotham</h4>
+                        <p>"The night is darkest just before the dawn."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork6.jpg" alt="The World's Greatest Detective">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>The World's Greatest Detective</h4>
+                        <p>"Sometimes it's only madness that makes us what we are."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork7.jpg" alt="Symbol of Hope">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>Symbol of Hope</h4>
+                        <p>"A hero can be anyone, even a man doing something as simple as putting a coat around a young boy's shoulders."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork8.jpg" alt="Knight of Gotham">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>Knight of Gotham</h4>
+                        <p>"Why do we fall? So we can learn to pick ourselves up."</p>
+                    </div>
+                </div>
+                <div class="artwork-card">
+                    <div class="artwork-placeholder">
+                        <img src="img/artwork9.jpg" alt="The Legend">
+                    </div>
+                    <div class="artwork-caption">
+                        <h4>The Legend</h4>
+                        <p>"I wear a mask. And that mask, it's not to hide who I am, but to create what I am."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="feedback" class="page">
+            <h1>FEEDBACK</h1>
+            <p style="text-align: center; color: #988829; margin-bottom: 2rem;">Help us improve the Batman Universe website with your comments and suggestions</p>
+            <div class="feedback-form">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comments & Suggestions</label>
+                        <textarea id="comment" required></textarea>
+                    </div>
+                    <button type="submit">SUBMIT FEEDBACK</button>
+                </form>
+            </div>
+            <div class="feedback-list" id="feedbackList">
+                <h2>Recent Feedback</h2>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>ABOUT THIS WEBSITE</h3>
+            <p>The Batman Collection is a comprehensive digital archive dedicated to celebrating the legacy of the Dark Knight. This website showcases the evolution of Batman across multiple media formats, from his debut in 1939 to modern interpretations.</p>
+            <p>Created as a tribute to one of the most iconic superheroes in pop culture history, this collection serves as a resource for fans, researchers, and anyone fascinated by the world of Gotham City.</p>
+
+        </div>
+        
+        <div class="feedback-section">
+            <h3>HELP US IMPROVE</h3>
+            <p>Share your suggestions</p>
+            <form id="footerFeedbackForm" class="footer-feedback-form">
+                <div class="footer-form-group">
+                    <input type="text" id="footer-name" placeholder="Your Name" required>
+                </div>
+                <div class="footer-form-group">
+                    <input type="email" id="footer-email" placeholder="Your Email" required>
+                </div>
+                <div class="footer-form-group">
+                    <textarea id="footer-suggestion" placeholder="Your suggestions..." required></textarea>
+                </div>
+                <button type="submit">SEND FEEDBACK</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-info">
+        <p>&copy; 2026 The Batman Universe | CS/IT ELEC1/ES101 Final Project</p>
+        <p>Batman and all related characters are property of DC Comics</p>
+    </div>
+</footer>
+    <script src="ADARLOSCRIPT.js"></script>
+</body>
+</html>
